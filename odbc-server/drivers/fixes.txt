@@ -1,0 +1,151 @@
+     FIXES.TXT
+     Progress(R) DataDirect(R) 
+     DataDirect OpenAccess SDK
+     Release 7.2
+     Build Number 7.2.0.0050
+     September 2015
+
+     Modifications Since 7.2
+
+The following are issues that have been resolved since Release
+7.2 GA in September 2013.
+
+******************************************
+*
+*     Product: SQL Engine and IP SDK 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00339359 | 7.2.0.0050 | OpenAccess Server crashed when you tried to run the JOIN query with the JOIN condition on an index column and a non-index column, with DAM_CONN_OPTION_JOINORDER_USING_STATISTICS set to the value DAM_PROCESSING_ON. This has now been fixed.
+PSC00329565 | 7.2.0.0042 | Enhance OA JDBC driver to support for setClientInfo interface
+PSC00331394 | 7.2.0.0040 | Incorrect results returned when query has numeric expressions and numeric values have leading zeros
+PSC00325387 | 7.2.0.0035 | Schema information not returned when using unicode empty qualifier	
+PSC00321299 | 7.2.0.0034 | dateadd not returning expected value during DST  
+PSC00318287 | 7.2.0.0033 | Incorrect number of rows returned with Join and complex OR criteria
+PSC00310927 | 7.2.0.0032 | Allow IP to get the global IP address (public IP) of the Client - DAM_INFO_PUBLIC_CLIENT_ADDRESS
+PSC00311631 | 7.2.0.0031 | TLS errors during fetch of a table with a long varchar column
+PSC00305459 | 7.2.0.0026 | Improve the performance of IN condition processing
+PSC00305938 | 7.2.0.0026 | IP SCHEMA API is getting called twice for each of the schema object type
+PSC00305927 | 7.2.0.0026 | Service crashes when IP_SUPPORT_VALIDATE_SCHEMAOBJECTS_IN_USE  is turned on.
+PSC00301381 | 7.2.0.0025 | Potential memory leak for queries with subqueries in IN clause
+PSC00283274 | 7.2.0.0024 | Support conversion of LONG DataTypes
+PSC00290486 | 7.2.0.0023 | Power function returns 0 output with negative power value for numeric/decimal data
+PSC00284505 | 7.2.0.0021 | Request that MIN_SCALE be configurable by the IP
+PSC00283266 | 7.2.0.0020 | Support JDBC specification for CONVERT function
+PSC00285410 | 7.2.0.0019 | OpenAccess is using a floating point approximation of PI instead of the constant to convert degrees to radians.
+PSC00284066 | 7.2.0.0019 | "column data overflow" when using STDDEV
+PSC00279388 | 7.2.0.0017 | Enhancement request with OpenAccess SDK Server to support adding rowsets of next inner table when there is a outer join condition.
+PSC00277788 | 7.2.0.0016 | OpenAccess SDK server crashes when using unsupported scalar function
+PSC00277527 | 7.2.0.0016 | jdam.dam_getInfo does not return any value for DAM_INFO_IP_CLASS
+PSC00279044 | 7.2.0.0016 | Query with a subquery in IN clause crashes the service
+PSC00277621 | 7.2.0.0015 | Service Crash with UNION query on views
+PSC00112315 | 7.2.0.0013 | Aggregates do not process on all the rows when MAXROWS set to non-zero and without group by
+PSC00112732 | 7.2.0.0011 | Server crash after damex_describeCol
+PSC00113763 | 7.2.0.0011 | oasql.jar on Windows-64 built with Java 1.6 instead of Java 1.5
+
+
+
+
+******************************************
+*
+*     Product: Server 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00338631 | 7.2.0.0049 | Request for OpenSSL 1.0.2d upgrade for Logjam SSL vulnerability for OpenAccess SDK products
+PSC00329565 | 7.2.0.0042 | Enhance OA JDBC driver to support for setClientInfo interface
+PSC00332433 | 7.2.0.0041 | Certify OpenAccess with latest OpenSSL 1.0.0r version
+PSC00324003 | 7.2.0.0034 | OpenSSL 1.0.0o upgrade for SSL POODLE issue.
+PSC00310927 | 7.2.0.0032 | Allow IP to get the global IP address (public IP) of the Client - DAM_INFO_PUBLIC_CLIENT_ADDRESS
+PSC00311559 | 7.2.0.0031 | OA server mishandles the Timestamp fraction value
+PSC00308980 | 7.2.0.0029 | OA 7.2 : Fix vulnerabilities reported in OpenSSL security advisory dated June 5, 2014
+
+
+******************************************
+*
+*     Product: Local Client for ODBC
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00311559 | 7.2.0.0031 | OA server mishandles the Timestamp fraction value
+PSC00310601 | 7.2.0.0030 | "TCP/IP host is not specified" connecting with Local SDK and SQL_DRIVER_PROMPT=2	
+PSC00279548 | 7.2.0.0028 | Custom icon is not shown in the Add/Remove Programs window
+
+
+******************************************
+*
+*     Product: Client for ODBC 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00338631 | 7.2.0.0049 | Request for OpenSSL 1.0.2d upgrade for Logjam SSL vulnerability for OpenAccess SDK products
+PSC00332433 | 7.2.0.0041 | Certify OpenAccess with latest OpenSSL 1.0.0r version
+PSC00324003 | 7.2.0.0034 | OpenSSL 1.0.0o upgrade for SSL POODLE issue.
+PSC00308980 | 7.2.0.0029 | OA 7.2 : Fix vulnerabilities reported in OpenSSL security advisory dated June 5, 2014
+PSC00279548 | 7.2.0.0028 | Custom icon is not shown in the Add/Remove Programs window
+
+******************************************
+*
+*     Product: Client for JDBC 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00290310 | 7.2.0.0050 | DATA_TYPE values returned Incorrect for wide char data types with OA JDBC driver metadata getTypeInfo() call
+PSC00338631 | 7.2.0.0049 | Request for OpenSSL 1.0.2d upgrade for Logjam SSL vulnerability for OpenAccess SDK products
+PSC00336413 | 7.2.0.0044 | Tiggering the setQueryTimeout, sometimes throws the Null Pointer Exception
+PSC00329565 | 7.2.0.0042 | Enhance OA JDBC driver to support for setClientInfo interface
+PSC00330748 | 7.2.0.0037 | OpenAccess JDBC Client does not work with Java 8
+PSC00327267 | 7.2.0.0036 | Enhance OA JDBC driver to support PreparedStmt.isClosed()
+PSC00302196 | 7.2.0.0032 | SSL handshake failure with OA JDBC client by connecting to the OA Server which configured with non-anonymous ciphers
+PSC00269930 | 7.2.0.0014 | CustomProperties corrupted when using JDBC Client
+
+
+******************************************
+*
+*     Product: Client for ADO provider 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00338631 | 7.2.0.0049 | Request for OpenSSL 1.0.2d upgrade for Logjam SSL vulnerability for OpenAccess SDK products
+PSC00332433 | 7.2.0.0041 | Certify OpenAccess with latest OpenSSL 1.0.0r version
+PSC00324003 | 7.2.0.0034 | OpenSSL 1.0.0o upgrade for SSL POODLE issue.
+PSC00308980 | 7.2.0.0029 | OA 7.2 : Fix vulnerabilities reported in OpenSSL security advisory dated June 5, 2014
+
+
+******************************************
+*
+*     Product: Client for ADO.NET provider 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00291265 | 7.2.0.802  |  Enhance ADO.NET provider to support Visual Studio Integration
+PSC00055942 | 7.2.0.4202 |  Enhance ADO.NET provider to support data of numeric precision 127( Feature added in 7.0.1 OA SDK GA)
+PSC00291262 | 7.2.0.4202 |  Enhance ADO.Net provider to support named parameters
+
+
+******************************************
+*
+*     Product: Manager 
+*
+******************************************
+
+Issue#      | Build#     |     Issue Description/ Public Description
+========================================================================
+PSC00338631 | 7.2.0.0049 | Request for OpenSSL 1.0.2d upgrade for Logjam SSL vulnerability for OpenAccess SDK products
+PSC00332433 | 7.2.0.0041 | Certify OpenAccess with latest OpenSSL 1.0.0r version
+PSC00324003 | 7.2.0.0034 | OpenSSL 1.0.0o upgrade for SSL POODLE issue.
+PSC00308980 | 7.2.0.0029 | OA 7.2 : Fix vulnerabilities reported in OpenSSL security advisory dated June 5, 2014

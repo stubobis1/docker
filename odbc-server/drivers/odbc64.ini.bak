@@ -1,0 +1,19 @@
+[ODBC Data Sources]
+NetSuite=NetSuite ODBC Drivers 7.2
+
+[NetSuite]
+Driver=/opt/netsuite/odbcclient/lib64/ivoa25.so
+Description=Connect to your NetSuite account
+Host=odbcserver.na1.netsuite.com
+Port=1708
+ServerDataSource=NetSuite.com
+Encrypted=1
+Truststore=/opt/netsuite/odbcclient/cert/ca.cer, /opt/netsuite/odbcclient/cert/ca2.cer, /opt/netsuite/odbcclient/cert/ca3.cer
+CustomProperties=AccountID=3925193;RoleID=1036
+
+[ODBC]
+Trace=0
+IANAAppCodePage=4
+TraceFile=odbctrace.out
+TraceDll=/opt/netsuite/odbcclient/lib64/ddtrc25.so
+InstallDir=/opt/netsuite/odbcclient

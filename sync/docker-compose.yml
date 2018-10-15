@@ -1,0 +1,11 @@
+version: '3'
+services:
+    sync:
+        container_name: Sync
+        ports:
+            - '127.0.0.1:8888:8888'
+            - 55555
+        volumes:
+            - '~/c-home/Sync:/mnt/sync'
+        restart: on-failure
+        image: resilio/sync
